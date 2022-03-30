@@ -9,4 +9,4 @@ class CarSerializer(serializers.ModelSerializer):
     # how the data will be sent out
     class Meta:
         model = Car
-        field = ['id','make','model','year','price']
+        fields = ['id','make','model','year','price']
