@@ -17,6 +17,10 @@ def cars_list(request):
         serializer.save()
         return Response(serializer.data, status = status.HTTP_201_CREATED)
         
-
+@api_view(['GET'])
+# needs a restriction set for number since the pk is an integer
+def car_detail(request,pk):
+    print(pk)
+    return Response(pk)
 
 
